@@ -56,7 +56,7 @@ const BedDetail = () => {
           <div className="detail-info">
             <h2>{bed.name}</h2>
             <p className="bed-type">{bed.type}</p>
-            <p className="bed-price">${bed.price.toFixed(2)}</p>
+            <p className="bed-price">R{bed.price.toFixed(2)}</p>
             <p className="bed-description">{bed.description}</p>
             
             <h3>Features</h3>

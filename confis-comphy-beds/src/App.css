@@ -437,32 +437,29 @@ main {
 }
 
 /* Logo Styles */
-.logo-link {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-}
 
-.logo-svg {
-  height: 40px;
-  width: auto;
-  transition: transform 0.3s ease;
-}
 
-.logo-svg:hover {
-  transform: scale(1.05);
-}
 
-/* Header adjustments */
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 /* Mobile adjustments */
 @media (max-width: 767px) {
   .logo-svg {
     height: 30px;
   }
+}
+
+/* For a black logo that you want to make white */
+.logo-svg.dark-logo {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
+}
+
+/* For a white logo that you want to make black */
+.logo-svg.light-logo {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+/* Custom color using filters (more complex) */
+.logo-svg.blue-logo {
+  filter: invert(24%) sepia(89%) saturate(1703%) hue-rotate(202deg) brightness(93%) contrast(93%);
 }

@@ -21,10 +21,17 @@ const Header = () => {
             aria-label="Home"
             onClick={() => setNavActive(false)}
           >
+            {/* <Logo 
+              color="#2c3e50" 
+              textColor="#ecf0f1" 
+              width={130} 
+              height={40} 
+              className="header-logo"
+            /> */}
             <img 
               src={Logo} 
               alt="ConfisComphyBeds Logo" 
-              className="logo-svg"
+              className="logo-svg dark-logo"
             />
           </Link>
           
@@ -33,15 +40,15 @@ const Header = () => {
             onClick={toggleNav}
             aria-label="Toggle navigation"
           >
-            {navActive ? <FaTimes /> : <FaBars />}
+            {/* {navActive ? <FaTimes /> : <FaBars />} */}
           </button>
           
-          <nav className={`nav ${navActive ? 'active' : ''}`}>
+          {/* <nav className={`nav ${navActive ? 'active' : ''}`}>
             <Link to="/" onClick={() => setNavActive(false)}>Home</Link>
             <a href="#bed-types" onClick={() => setNavActive(false)}>Bed Types</a>
             <a href="#delivery" onClick={() => setNavActive(false)}>Delivery</a>
             <a href="#contact" onClick={() => setNavActive(false)}>Contact</a>
-          </nav>
+          </nav> */}
         </div>
       </div>
     </header>

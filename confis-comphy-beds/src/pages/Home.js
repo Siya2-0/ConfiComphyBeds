@@ -86,7 +86,7 @@ const Home = () => {
               <div className="bed-info">
                 <h3>{bed.name}</h3>
                 <p className="bed-type">{bed.type}</p>
-                <p className="bed-price">${bed.price.toFixed(2)}</p>
+                <p className="bed-price">R{bed.price.toFixed(2)}</p>
                 <Link to={`/bed/${bed.id}`}>
                   <button className="view-details-btn">View Details</button>
                 </Link>
